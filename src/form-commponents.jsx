@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader} from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
@@ -18,7 +18,7 @@ export default function CustomerForm() {
     <form onSubmit={(e) => e.preventDefault()}>
       <Card className="shadow-lg border-0">
         <CardHeader className="bg-gradient-to-r from-slate-100 to-slate-50 border-b">
-          <CardTitle className="text-2xl text-slate-800">Customer Information Form</CardTitle>
+          <h2 className="font-semibold text-6xl text-slate-800">Customer Information Form</h2>
           <CardDescription>Enter customer details to create or update a record</CardDescription>
         </CardHeader>
 

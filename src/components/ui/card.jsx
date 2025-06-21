@@ -32,7 +32,7 @@ function CardHeader({
   );
 }
 
-function CardTitle({
+function h2({
   className,
   ...props
 }) {
@@ -94,7 +94,7 @@ export {
   Card,
   CardHeader,
   CardFooter,
-  CardTitle,
+  h2,
   CardAction,
   CardDescription,
   CardContent,

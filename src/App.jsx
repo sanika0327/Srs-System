@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
@@ -11,22 +11,22 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { PlusCircle, Save, X } from "lucide-react"
 
-export default function CustomerForm() {
+export default function CustomerForm() {  
   const [customerType, setCustomerType] = useState("company")
 
   return (
-    <div className="w-full h-screen  flex justify-centre items-center">
+    <div className="w-full max-h-full  flex justify-centre items-center">
     <div className="w-[90%]  h-[90%] bg-gray border border-gray-300 rounded-lg p-10 mx-auto justify-center items-center">
      <form onSubmit={(e) => e.preventDefault()}>
-      <Card className="shadow-lg border-0">
-        <CardHeader className="bg-gradient-to-r from-slate-100 to-slate-50 border-b">
-          <CardTitle className="text-4xl text-slate-800 mt-[10px]">Customer Information Form</CardTitle>
-          <CardDescription>Enter customer details to create or update a record</CardDescription>
+      <Card className=" rounded-lg shadow-2xl bg-gradient-to- from-slate-100 to-slate-50">
+        <CardHeader className="bg-gradient-to-b from-slate-100 to-slate-50 border-b text-slate-800">
+          <h1 className="text-6xl font-semibold  mt-[20px]">Customer Information Form</h1>
+          <h2 className="text-4xl font-medium">Enter customer details to create or update a record</h2>
         </CardHeader>
 
         <CardContent className="p-6">
           <Tabs defaultValue="basic" className="w-full">
-            <TabsList className="grid grid-cols-4 mb-6">
+            <TabsList className="grid grid-cols-4 mb-6 shaddoe-lg">
               <TabsTrigger value="basic">Basic Information</TabsTrigger>
               <TabsTrigger value="contact">Contact Information</TabsTrigger>
               <TabsTrigger value="address">Address Information</TabsTrigger>
