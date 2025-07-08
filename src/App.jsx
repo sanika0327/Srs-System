@@ -11,7 +11,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { PlusCircle, Save, X } from "lucide-react"
 
-export default function CustomerForm() {  
+export default function App() {  
   const [customerType, setCustomerType] = useState("company")
 
   return (
